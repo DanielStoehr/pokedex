@@ -7,7 +7,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans:wght@700&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -17,7 +18,7 @@
 <div id="pokedex"></div>
 <div id="modal" style="display: none">
     <div id="detail" class="grass">
-        <img id="close-button" src="img/aiga_left_arrow.svg" onclick="closeModal()">
+        <img alt="close-button" id="close-button" src="img/aiga_left_arrow.svg" onclick="closeModal()">
         <div id="detail-header">
             <div id="detail-headline">
                 <div>
@@ -26,11 +27,12 @@
                 </div>
                 <div id="detail-pokemon-id"></div>
             </div>
-            <img alt="pokemon-image" id="detail-image">
+            <img alt="pokemon-image" id="detail-image" src="">
         </div>
         <div id="detail-data">
             <div id="detail-menu">
-                <a id="detail-nav-about" href="#" class="detail-nav-link active" onclick="changeSection('about')">About</a>
+                <a id="detail-nav-about" href="#" class="detail-nav-link active"
+                   onclick="changeSection('about')">About</a>
                 <a id="detail-nav-base" href="#" class="detail-nav-link" onclick="changeSection('base')">Base Stats</a>
             </div>
             <table id="detail-table"></table>
